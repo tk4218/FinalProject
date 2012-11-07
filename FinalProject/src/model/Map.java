@@ -5,8 +5,9 @@ public class Map {
 	private int size;
 	private String description;
 	
-	public Map(){
-		
+	public Map(int x, int y){
+		map = new String[x][y];
+		size = x*y;
 	}
 	
 	public boolean positionUnits(Unit unit, int xCoord, int yCoord){
